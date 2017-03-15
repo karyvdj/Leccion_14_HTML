@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Primer formulario</title>
+  </head>
+  <h1>Primer formulario</h1>
+  <body>
+    <style>
+      body{
+        background: #500068;
+        color: white;
+        font-family: Helvetica;
+        text-align: center;
+      }
+    </style>
+    <form action>
+      <div>
+        <label>Nombre:</label><br>
+        <input type="nombre" placeholder="Nombre" required>
+      </div>
+      <div>
+        <label>Telefono:</label><br>
+        <input type= "text" patternr="^[55]\d{8}$" required>
+      </div>
+      <div>
+        <label>Dia de la semana:</label><br>
+        <select>
+          <option value="">Lunes</option>
+          <option value="">Martes</option>
+          <option value="">Miercoles</option>
+          <option value="">Jueves</option>
+          <option value="">Viernes</option>
+        </select>
+      </div>
+      <div>
+        <label>Mail:</label><br>
+        <input type= "mail" placeholder="Mail" required>
+      </div>
+      <div
+        <label>Password:</label><br>
+        <input type= "pasaword" name="pw" pattern="{6,}" title="6 o mas caracteres" required>
+      </div>
+      <div>
+      <!--<label>Enviar:</label>-->
+        <p>
+        <input type= "submit" value="ENVIAR" required>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
