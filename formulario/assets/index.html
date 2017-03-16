@@ -8,43 +8,56 @@
   <body>
     <style>
       body{
-        background: #500068;
+        background: #521C7F;
         color: white;
         font-family: Helvetica;
         text-align: center;
       }
+      div{
+        color:#CCA1FF;
+        font-family: 'Raleway', sans-serif;;
+      }
     </style>
     <form action>
       <div>
-        <label>Nombre:</label><br>
-        <input type="nombre" placeholder="Nombre" required>
-      </div>
-      <div>
-        <label>Telefono:</label><br>
-        <input type= "text" patternr="^[55]\d{8}$" required>
-      </div>
-      <div>
-        <label>Dia de la semana:</label><br>
-        <select>
-          <option value="">Lunes</option>
-          <option value="">Martes</option>
-          <option value="">Miercoles</option>
-          <option value="">Jueves</option>
-          <option value="">Viernes</option>
-        </select>
-      </div>
-      <div>
-        <label>Mail:</label><br>
-        <input type= "mail" placeholder="Mail" required>
-      </div>
-      <div
-        <label>Password:</label><br>
-        <input type= "pasaword" name="pw" pattern="{6,}" title="6 o mas caracteres" required>
-      </div>
-      <div>
-      <!--<label>Enviar:</label>-->
         <p>
-        <input type= "submit" value="ENVIAR" required>
+          <label>Nombre:</label>
+        </p>
+          <input type="nombre" placeholder="Nombre" required>
+      </div>
+      <div>
+        <p>
+          <label>Telefono:</label><br>
+        </p>
+          <input type= "text" patternr="^[55]\d{8}$">
+      </div>
+      <div>
+        <p>
+          <label>Dia de la semana:</label>
+        </p>
+          <select>
+            <option value="">Lunes</option>
+            <option value="">Martes</option>
+            <option value="">Miercoles</option>
+            <option value="">Jueves</option>
+            <option value="">Viernes</option>
+          </select>
+      </div>
+      <div>
+        <p>
+          <label>E-mail:</label><br>
+          <input type= "mail" placeholder="Mail" required>
+        </p>
+      </div>
+      <div>
+        <p>
+          <label>Password:</label><br>
+          <input type= "pasaword" name="pw" pattern="{6,}" title="6 o mas caracteres" required>
+        </p>
+      </div>
+      <div>
+        <p>
+          <input  style = "color:#1A2940" type= "submit" value="ENVIAR">
         </p>
       </div>
     </form>
